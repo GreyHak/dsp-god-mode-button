@@ -26,7 +26,7 @@ namespace DSPGodModeButton
     {
         public const string pluginGuid = "greyhak.dysonsphereprogram.godmodebutton";
         public const string pluginName = "DSP God Mode Button";
-        public const string pluginVersion = "1.0.0";
+        public const string pluginVersion = "1.0.1";
         new internal static ManualLogSource Logger;
         Harmony harmony;
         public static bool initialCheckFlag = true;
@@ -103,6 +103,7 @@ namespace DSPGodModeButton
                 initialCheckFlag = false;
                 valueAtLastCheck = PlayerController.operationWhenBuild;
                 DSPGame.globalOption.buildingViewMode = PlayerController.operationWhenBuild ? 1 : 0;
+                DSPGame.globalOption.SaveGlobal();
 
                 bool tiggleGodModeModInstalledFlag = BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("doobist.dsp.godmodetoggle");
 

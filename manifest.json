@@ -1,6 +1,6 @@
 {
     "name": "DSP_God_Mode_Button",
-    "version_number": "1.0.0",
+    "version_number": "1.0.1",
     "website_url": "https://github.com/GreyHak/dsp-god-mode-button",
     "description": "Button on HUD to view and toggle god build mode.",
     "dependencies": [
