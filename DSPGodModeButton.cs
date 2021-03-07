@@ -17,7 +17,6 @@ using BepInEx.Logging;
 using HarmonyLib;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
 
 namespace DSPGodModeButton
 {
