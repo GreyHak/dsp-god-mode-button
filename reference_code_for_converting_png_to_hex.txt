@@ -1,0 +1,25 @@
+            // This code supports images up to a height of 64 pixels.
+            var bytes = File.ReadAllBytes("C:\\temp\\GodIcon.png");
+            Texture2D texture = new Texture2D(2, 2);
+            bool imageLoadSuccess = texture.LoadImage(bytes);
+            StringBuilder sb = new StringBuilder();
+            sb.Append("\n{ ");
+            for (int x = 0; x < texture.width; x++)
+            {
+                ulong hex = 0;
+                for (int y = 0; y < texture.height; y++)
+                {
+                    Color color = texture.GetPixel(x, y);
+                    if (color.r < 0.5)
+                    {
+                        hex |= ((ulong)1 << y);
+                    }
+                }
+                sb.AppendFormat("0x{0:X}", hex);
+                if (x + 1 < texture.width)
+                {
+                    sb.Append(",");
+                }
+            }
+            sb.Append(" };");
+            Logger.LogInfo(sb.ToString());

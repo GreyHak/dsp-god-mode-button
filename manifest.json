@@ -1,0 +1,9 @@
+{
+    "name": "DSP_God_Mode_Button",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/GreyHak/dsp-god-mode-button",
+    "description": "Button on HUD to view and toggle god build mode.",
+    "dependencies": [
+        "xiaoye97-BepInEx-5.4.5"
+    ]
+}
