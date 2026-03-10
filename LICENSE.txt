@@ -1,4 +1,4 @@
-Copyright (c) 2021, Aaron Shumate
+Copyright (c) 2021-2026, GreyHak (github.com/GreyHak)
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

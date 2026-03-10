@@ -1,5 +1,5 @@
 ﻿//
-// Copyright (c) 2021, Aaron Shumate
+// Copyright (c) 2021-2026, GreyHak (github.com/GreyHak)
 // All rights reserved.
 //
 // This source code is licensed under the BSD-style license found in the
@@ -15,11 +15,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("DSP God Mode Button")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Mod for Dyson Sphere Program will allow the player to toggle God build mode with a button on the HUD.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("DSP God Mode Button")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCopyright("Copyright ©  2021-2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -41,5 +41,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.1")]
-[assembly: AssemblyFileVersion("1.0.1")]
+[assembly: AssemblyVersion("1.0.2")]
+[assembly: AssemblyFileVersion("1.0.2")]

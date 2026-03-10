@@ -1,5 +1,5 @@
 ﻿//
-// Copyright (c) 2021, Aaron Shumate
+// Copyright (c) 2021-2026, GreyHak (github.com/GreyHak)
 // All rights reserved.
 //
 // This source code is licensed under the BSD-style license found in the
@@ -22,11 +22,12 @@ namespace DSPGodModeButton
 {
     [BepInPlugin(pluginGuid, pluginName, pluginVersion)]
     [BepInProcess("DSPGAME.exe")]
+    [BepInProcess("Dyson Sphere Program.exe")]
     public class DSPGodModeButton : BaseUnityPlugin
     {
         public const string pluginGuid = "greyhak.dysonsphereprogram.godmodebutton";
         public const string pluginName = "DSP God Mode Button";
-        public const string pluginVersion = "1.0.1";
+        public const string pluginVersion = "1.0.2";
         new internal static ManualLogSource Logger;
         Harmony harmony;
         public static bool initialCheckFlag = true;
@@ -95,8 +96,8 @@ namespace DSPGodModeButton
             return Sprite.Create(tex, new Rect(0f, 0f, 48f, 48f), new Vector2(0f, 0f), 1000);
         }
 
-        [HarmonyPostfix, HarmonyPatch(typeof(GameData), "GameTick")]
-        public static void GameData_GameTick_Postfix()
+        [HarmonyPostfix, HarmonyPatch(typeof(SpaceSector), "GameTick")]
+        public static void SpaceSector_GameTick_Postfix()
         {
             if ((enableDisableButton != null) && (initialCheckFlag || valueAtLastCheck != PlayerController.operationWhenBuild))
             {
